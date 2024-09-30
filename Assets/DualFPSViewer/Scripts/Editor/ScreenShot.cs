@@ -17,7 +17,7 @@ public static class ScreenShot
 		}
 
 		DateTime dateTime = DateTime.Now;
-		string fileName = $"{FileName}_{dateTime.Year}_{dateTime.Month}_{dateTime.Day}_{dateTime.Hour}_{dateTime.Minute}_{dateTime.Second}.png";
+		string fileName = $"{FileName}_{dateTime.Year:0000}_{dateTime.Month:00}_{dateTime.Day:00}_{dateTime.Hour:00}_{dateTime.Minute:00}_{dateTime.Second:00}.png";
 		string outputPath = Path.Combine(OutputDirectory, fileName);
 
 		ScreenCapture.CaptureScreenshot(outputPath);
