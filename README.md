@@ -7,3 +7,7 @@
 ※処理速度以上のFPS値や、画面のリフレッシュレート以上のFPS値を入力しても、そのFPSで描画更新が行なわれるわけではありません。
 
 https://damungames.github.io/DualFPSViewer/
+
+## LICENSE
+
+[WebGLNativeInputField](WebGLNativeInputField_LICENSE)

@@ -22,7 +22,7 @@ namespace DamunGames.DualFPSViewer
 			public Camera Camera;
 			public RenderTexture RenderTexture;
 			public Image PreviewMaskImage;
-			public TMP_InputField FPSInputField;
+			public WebGLNativeInputField FPSInputField;
 
 			IntervalUpdater _intervalUpdater;
 
@@ -32,7 +32,7 @@ namespace DamunGames.DualFPSViewer
 				SetUpdateInterval(defalutFPS);
 
 				if (FPSInputField != null) {
-					FPSInputField.onEndEdit.AddListener(OnEndEditFPSInputField);
+					FPSInputField.onValueChanged.AddListener(OnEndEditFPSInputField);
 				}
 
 				Render();
