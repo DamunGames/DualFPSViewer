@@ -192,7 +192,6 @@ namespace DamunGames.DualFPSViewer
 		void UpdateRefreshRate()
 		{
 			_refreshRate = GetRefreshRate();
-			Application.targetFrameRate = _refreshRate;
 		}
 
 		#region Log
