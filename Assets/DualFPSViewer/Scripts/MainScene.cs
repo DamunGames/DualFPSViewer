@@ -117,6 +117,9 @@ namespace DamunGames.DualFPSViewer
 
 		void Start()
 		{
+			QualitySettings.vSyncCount = 0;
+			Application.targetFrameRate = 240;
+
 			if (FirstHalfScreen != null) {
 				_halfScreens.Add(FirstHalfScreen);
 			}
@@ -227,6 +230,6 @@ namespace DamunGames.DualFPSViewer
 				position.y += height;
 			}
 		}
-		#endregion
+#endregion
 	}
 }
